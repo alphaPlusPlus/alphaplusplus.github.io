@@ -138,7 +138,6 @@ p {
 
 @media screen and (max-width: 767px) {
     .container {
-        margin-top: 70px;
         max-width: 100%;
         position: static;
         width: 80%;
@@ -146,15 +145,14 @@ p {
 }
 .image {
     margin:0 auto;
-    width:550px;
-    height:370px;
+    height:320px;
 }
 .image img {
     max-width:100%;
 }
 
-.list > .image {
-    margin:50px auto 0 auto;
+.list >  .item > .image {
+    margin:0 auto;
     width:275px;
     height:185px;
 }
@@ -163,7 +161,8 @@ p {
     max-width:100%;
 }
 
-.list .image > span {
+.list .item > span {
+    margin:10px 0;
     color:#ffffff;
     text-align:center;
     display:block;
