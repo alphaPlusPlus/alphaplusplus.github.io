@@ -8,6 +8,7 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/superslides.css">
 </head>
 <body>
@@ -32,25 +33,28 @@
                         <div class="image">
                             <img src="images/3.png" alt="" class="preserve">
                         </div>
-                        <span>Falafel tarlik</span>
+                        <span>Falafel sallad</span>
                     </div>
                     </div>
             </li>
 
+            
             <li>
                 <div class="image">
                     <img src="images/1.png" alt="" class="preserve">
                 </div>
                 <div class="container">
                     <h1>Falafel burgare</h1>
-                    <div class="contrast">
-                        <p>
-                            Version 0.5 was a ground up, TDD rebuild, fixing many quirky bugs and standardizing the event and control APIs.
-                        </p>
-                    </div>
+                    <!--
+            <div class="contrast">
+                <p>
+                    Version 0.5 was a ground up, TDD rebuild, fixing many quirky bugs and standardizing the event and control APIs.
+                </p>
+            </div>-->
                 </div>
 
             </li>
+
            
             <li>
                 <div class="image">
@@ -58,11 +62,6 @@
                 </div>
                 <div class="container">
                     <h1>Falafel rulle</h1>
-                    <div class="contrast">
-                        <p>
-                            Version 0.5 was a ground up, TDD rebuild, fixing many quirky bugs and standardizing the event and control APIs.
-                        </p>
-                    </div>
                 </div>
             </li>
             <li>
@@ -70,12 +69,7 @@
                     <img src="images/3.png" alt="" class="preserve">
                 </div>
                 <div class="container">
-                    <h1>Falafel tarlik</h1>
-                    <div class="contrast">
-                        <p>
-                            Version 0.5 was a ground up, TDD rebuild, fixing many quirky bugs and standardizing the event and control APIs.
-                        </p>
-                    </div>
+                    <h1>Falafel sallad</h1>
                 </div>
             </li>
             
@@ -90,7 +84,24 @@
         $('#slides').superslides({
             hashchange: false,
             pagination: false,
-            play:10000
+            play:5000
+        });
+
+        $('#slides').on('animated.slides', function () {
+            var current_index = $(this).superslides('current');
+
+            if (current_index == 0) { // third slide
+
+                $(this).superslides('stop');
+
+                var disp = function test1() {
+                    setTimeout(function () {
+                        $('#slides').superslides('start')
+                    }, 20000);
+
+                }
+                disp();
+            }
         });
     });
     </script>
