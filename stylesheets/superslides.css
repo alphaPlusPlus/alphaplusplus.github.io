@@ -150,6 +150,7 @@ p {
 .image {
     margin:0 auto;
     height:320px;
+    text-align:center;
 }
 .image img {
     max-width:100%;
@@ -157,12 +158,11 @@ p {
 
 .list >  .item > .image {
     margin:0 auto;
-    width:275px;
-    height:185px;
+    height:10%;
 }
 
-.list .image > img {
-    max-width:100%;
+.list >  .item > .image > img {
+    max-width:50%;
 }
 
 .list .item > span {
