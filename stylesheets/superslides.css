@@ -145,7 +145,7 @@ p {
     }
 }
 .image {
-    margin:10% auto 0 auto;
+    margin:0 auto;
     width:550px;
     height:370px;
 }
@@ -154,7 +154,7 @@ p {
 }
 
 .list > .image {
-    margin:10% auto 0 auto;
+    margin:50px auto 0 auto;
     width:275px;
     height:185px;
 }
