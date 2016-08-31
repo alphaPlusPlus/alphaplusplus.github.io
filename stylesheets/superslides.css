@@ -171,5 +171,7 @@ p {
     text-align:center;
     display:block;
     font-size:1.5em;
-    font-weight:300;
+}
+.list .item > span  > b {
+    font-size:1.2em;
 }
