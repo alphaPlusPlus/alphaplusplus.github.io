@@ -42,4 +42,5 @@ p{
 }
 .row {margin-top:50px;}
 .row > div{margin-bottom:20px;}
+img{max-width:100%;}
 
