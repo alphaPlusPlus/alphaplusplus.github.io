@@ -608,7 +608,7 @@ main {
   font-size: 9px;
   border-radius: 50%;
   background: #ff0000;
-  top: 12px;
+  top: 11px;
   color: #fff;
   font-weight: 700;
   left: 41px;
@@ -647,6 +647,7 @@ footer {
   overflow: hidden;
   width: 100%;
   padding: 0 30px;
+  height: 55px;
 }
 
 footer .title {
@@ -658,7 +659,7 @@ footer .title {
 
 footer .text {
   font-size: 15px;
-  line-height: 30px;
+  line-height: 55px;
   color: #000;
   position: absolute;
   bottom: 0;
@@ -671,7 +672,7 @@ footer .footer-right ul {
 }
 
 footer .footer-right ul li a {
-  line-height: 30px;
+  line-height: 55px;
   font-size: 16px;
   text-decoration: none;
   color: #666666;
@@ -681,8 +682,8 @@ footer .footer-right .social-media {
   float: right;
   border-left: 1px solid #262626;
   padding-left: 16px;
-  height: 53px;
-  margin-top: 20px;
+  height: 55px;
+  margin-top: 0px;
 }
 
 footer .footer-right .social-media img {
@@ -784,6 +785,7 @@ footer .footer-right .social-media img {
   margin: 0px 10px;
   margin-bottom: 20px;
   display: block;
+  color: #666666;
 }
 
 .main-content .box {
@@ -957,6 +959,25 @@ footer .footer-right .social-media img {
   margin: 0px 10px;
 }
 
+.buttons {
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+.buttons .save-button {
+  color: #ffffff;
+  background: #ff0000;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  padding: 0 26px;
+  margin: 25px 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
 /*
 ================================================================================
 
@@ -1084,11 +1105,11 @@ footer .footer-right .social-media img {
     float: left;
   }
   footer .title {
-    line-height: 94px;
+    line-height: 55px;
   }
   footer .text {
     margin-left: 40px;
-    line-height: 94px;
+    line-height: 55px;
     position: relative;
   }
   footer .footer-right {
@@ -1104,7 +1125,7 @@ footer .footer-right .social-media img {
     float: left;
   }
   footer .footer-right ul li a {
-    line-height: 94px;
+    line-height: 55px;
   }
   .main-header {
     margin: 0px 10%;
@@ -1185,6 +1206,9 @@ footer .footer-right .social-media img {
   }
   .main-content {
     width: 60%;
+  }
+  .main-content h1 {
+    font-size: 30px;
   }
   .side-menu {
     position: relative;
@@ -1319,16 +1343,48 @@ footer .footer-right .social-media img {
 
 /* my content
 ------------------------------------ */
+.my-content h1 {
+  margin: 20px 10px;
+  float: left;
+}
+
+.my-content .add-button {
+  float: right;
+  display: block;
+  text-decoration: none;
+  margin: 18px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 29px;
+  line-height: 29px;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.my-content .add-button img {
+  margin-right: 5px;
+}
+
+.my-content .side-menu {
+  display: none;
+}
+
 .my-content .item {
   margin: 20px 10px;
   clear: both;
   overflow: hidden;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
 }
 
 .my-content .item > .box {
   float: none;
   width: 100%;
   margin: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .my-content .item > .box > div {
@@ -1336,15 +1392,17 @@ footer .footer-right .social-media img {
 }
 
 .my-content .item > .controls {
-  float: right;
+  float: none;
+  text-align: right;
+  padding: 20px 0;
   margin-top: 20px;
 }
 
 .my-content .item > .controls > a {
   text-decoration: none;
-  color: #000000;
-  font-size: 1.5em;
-  margin: 0 20px;
+  color: #666666;
+  font-size: 14px;
+  margin: 0 10px;
 }
 
 /*
@@ -1365,14 +1423,22 @@ footer .footer-right .social-media img {
   .my-content .main-content {
     width: 100%;
   }
+  .my-content .main-content .add-button {
+    margin: 18px 40px;
+  }
+  .my-content .main-content h1 {
+    margin: 20px 40px;
+  }
   .my-content .main-content .item {
-    margin: 20px 10%;
+    margin: 20px 40px;
   }
   .my-content .main-content .item > .box {
     float: left;
     width: 50%;
   }
   .my-content .main-content .item > .controls {
+    float: right;
+    padding: 0;
     margin-top: 100px;
   }
 }
@@ -1386,55 +1452,192 @@ footer .footer-right .social-media img {
 */
 @media (min-width: 80em) {
   .my-content .main-content {
-    width: 80%;
+    width: 100%;
+  }
+  .my-content .main-content .add-button {
+    margin: 18px 40px;
+  }
+  .my-content .main-content h1 {
+    margin: 20px 40px;
   }
   .my-content .main-content .item {
-    margin: 20px 10%;
+    margin: 20px 40px;
   }
 }
 
 /*Course
 ------------------------------------ */
+.course .side-menu {
+  display: none;
+}
+
 .course .course-content {
   margin: 20px 10px;
 }
 
-.course .course-content > .video {
+.course .course-content > .content {
   background: #ffffff;
   width: 100%;
   -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
 }
 
-.course .course-content > .video > .tabs {
+.course .course-content > .content > .tabs {
   background: #fafafa;
   clear: both;
   display: block;
   overflow: hidden;
 }
 
-.course .course-content > .video > .tabs > a {
+.course .course-content > .content > .tabs > a {
   text-decoration: none;
   padding: 0 20px;
   color: #666666;
   font-size: 1.6em;
   height: 35px;
   line-height: 35px;
+  min-width: 100px;
+  text-align: center;
   float: left;
 }
 
-.course .course-content > .video > .tabs > a.selected {
+.course .course-content > .content > .tabs > a.selected {
   background: #ffffff;
 }
 
-.course .course-content > .video > .content {
+.course .course-content > .content > .tabcontent {
   clear: both;
   display: block;
-  margin: 10px;
+}
+
+.course .course-content > .content > .tabcontent.video {
+  margin: 15px;
   background: #e6e6e6;
   height: 380px;
   text-align: center;
   line-height: 380px;
+}
+
+.course .course-content > .content > .tabcontent.text {
+  margin: 25px 10px;
+  font-size: 15px;
+}
+
+.course .course-content > .content > .tabcontent.text > span {
+  font-size: 17px;
+  color: #5c9732;
+}
+
+.course .course-content > .content > .tabcontent.quiz {
+  font-size: 16px;
+  color: #666666;
+  margin: 35px;
+}
+
+.course .course-content > .content > .tabcontent.quiz .progress-container {
+  clear: both;
+  overflow: hidden;
+}
+
+.course .course-content > .content > .tabcontent.quiz .progress-container > .progress {
+  float: left;
+  height: 38px;
+  background: #cccccc;
+  margin: 50px 0;
+  position: relative;
+  width: -webkit-calc(100% - 80px);
+  width: -moz-calc(100% - 80px);
+  width: calc(100% - 80px);
+}
+
+.course .course-content > .content > .tabcontent.quiz .progress-container > .progress > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 38px;
+  display: block;
+  background: #7ac943;
+  border-right: 3px solid #ffffff;
+}
+
+.course .course-content > .content > .tabcontent.quiz .progress-container > span {
+  float: right;
+  font-size: 14px;
+  color: #000000;
+  width: 80px;
+  margin: 50px 0;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.course .course-content > .content > .tabcontent.quiz span {
+  display: block;
+  margin-right: 80px;
+}
+
+.course .course-content > .content > .tabcontent.quiz .answers {
+  list-style: none;
+  margin: 40px 80px 40px 0;
+  padding: 0;
+}
+
+.course .course-content > .content > .tabcontent.quiz .answers > li {
+  height: 22px;
+  line-height: 22px;
+  font-size: 17px;
+  display: block;
+  margin: 10px 0;
+}
+
+.course .course-content > .content > .tabcontent.quiz .answers > li > img {
+  float: left;
+  margin-right: 13px;
+}
+
+.course .course-content > .content > .tabcontent.quiz .answers > li.right {
+  color: #5c9732;
+}
+
+.course .course-content > .content > .tabcontent.quiz .answers > li.wrong {
+  color: #ff0000;
+}
+
+.course .course-content > .content > .tabcontent.quiz .answers > li.gray {
+  color: #666666;
+}
+
+.course .course-content > .content > .tabcontent.quiz .answers > li.black {
+  color: #000000;
+}
+
+.course .course-content > .content > .tabcontent.quiz .right-answer {
+  font-size: 17px;
+  color: #5c9732;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.course .course-content > .content > .tabcontent.quiz .images {
+  clear: both;
+  overflow: hidden;
+  margin: 60px 0;
+  margin-right: 80px;
+}
+
+.course .course-content > .content > .tabcontent.quiz .images > img {
+  float: left;
+  margin-right: 23px;
+  width: 340px;
+  height: 266px;
+}
+
+.course .course-content > .content > .tabcontent.quiz .images > img:last-child {
+  margin-right: 0px;
+}
+
+.course .course-content > .content > .tabcontent.quiz .save-button {
+  margin-right: 100px;
 }
 
 .course .course-content > .other-quizes {
@@ -1494,14 +1697,16 @@ footer .footer-right .social-media img {
   .course .main-content {
     width: 100%;
   }
+  .course .main-content .main-header {
+    margin: 0px 40px;
+  }
   .course .main-content .course-content {
-    margin: 20px 10%;
-    margin: 20px 10%;
+    margin: 20px 40px;
     display: block;
     overflow: hidden;
     height: 100%;
   }
-  .course .main-content .course-content > .video {
+  .course .main-content .course-content > .content {
     float: left;
     width: 65%;
   }
@@ -1520,12 +1725,16 @@ footer .footer-right .social-media img {
 */
 @media (min-width: 80em) {
   .course .main-content {
-    width: 80%;
+    width: 100%;
   }
 }
 
 /*create-question
 ------------------------------------ */
+.create-question .side-menu {
+  display: none;
+}
+
 .create-question .question-content {
   margin: 20px 10px 0 10px;
 }
@@ -1542,7 +1751,7 @@ footer .footer-right .social-media img {
   line-height: 35px;
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 17px;
   background: #666666;
   display: block;
   padding: 0 20px;
@@ -1552,6 +1761,31 @@ footer .footer-right .social-media img {
 .create-question .question-content > .question > a:before {
   content: '◀';
   margin-right: 5px;
+}
+
+.create-question .question-content > .question .top-links {
+  height: 35px;
+  line-height: 35px;
+  background: #666666;
+  display: block;
+  padding: 0 20px;
+  border-radius: 3px;
+}
+
+.create-question .question-content > .question .top-links > a {
+  float: left;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  border-right: 1px solid #ffffff;
+  padding: 0 10px;
+  margin: 5px 0;
+  line-height: 25px;
+  height: 25px;
+}
+
+.create-question .question-content > .question .top-links > a:last-child {
+  border-right: none;
 }
 
 .create-question .question-content > .question form {
@@ -1571,15 +1805,26 @@ footer .footer-right .social-media img {
   display: block;
   margin-bottom: 15px;
   font-weight: 600;
+  margin-top: 35px;
 }
 
-.create-question .question-content > .question form input {
+.create-question .question-content > .question form input[type='text'], .create-question .question-content > .question form textarea, .create-question .question-content > .question form select {
   border: none;
   outline: none;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
   color: #000000;
   font-size: 14px;
+}
+
+.create-question .question-content > .question form .checkbox {
+  font-size: 16px;
+  color: #666666;
+  margin: 10px 0;
+}
+
+.create-question .question-content > .question form .checkbox > input {
+  margin-right: 10px;
 }
 
 .create-question .question-content > .question form a {
@@ -1699,11 +1944,20 @@ footer .footer-right .social-media img {
   .create-question .main-content {
     width: 100%;
   }
+  .create-question .main-content .main-header {
+    margin: 0px 40px;
+  }
   .create-question .main-content .controls {
-    margin: 0 10%;
+    margin: 0 40px;
+  }
+  .create-question .main-content .buttons {
+    width: 65%;
+  }
+  .create-question .main-content .buttons .save-button {
+    margin: 25px 10px;
   }
   .create-question .main-content .question-content {
-    margin: 20px 10% 0 10%;
+    margin: 20px 40px 0 40px;
     display: block;
     overflow: hidden;
   }
@@ -1726,6 +1980,120 @@ footer .footer-right .social-media img {
 */
 @media (min-width: 80em) {
   .create-question .main-content {
-    width: 80%;
+    width: 100%;
+  }
+}
+
+/*results
+------------------------------------ */
+.results h1 {
+  padding: 20px 10px 20px 0px;
+}
+
+.results .side-menu {
+  display: none;
+}
+
+.results .table-container {
+  margin: 30px 10px;
+  overflow: auto;
+  width: 100%;
+}
+
+.results table {
+  width: 100%;
+  color: #666666;
+  border: none;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.results table tr {
+  height: 35px;
+  background: #ffffff;
+}
+
+.results table tr:first-child {
+  background: #fafafa;
+}
+
+.results table tr th {
+  text-align: right;
+  font-size: 17px;
+  padding: 0 30px;
+  white-space: nowrap;
+  color: #666666;
+  font-weight: 300;
+}
+
+.results table tr th:first-child {
+  padding-left: 25px;
+  text-align: left;
+}
+
+.results table tr th:last-child, .results table tr th.left {
+  text-align: left;
+}
+
+.results table tr th > img {
+  margin-left: 5px;
+}
+
+.results table tr td {
+  font-size: 14px;
+  text-align: right;
+  padding: 0 30px;
+  white-space: nowrap;
+  color: #666666;
+}
+
+.results table tr td:first-child {
+  padding-left: 25px;
+  text-align: left;
+}
+
+.results table tr td:last-child, .results table tr td.left {
+  text-align: left;
+}
+
+/*
+================================================================================
+
+  "Header" mobile styles
+
+================================================================================
+*/
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+@media (min-width: 64em) {
+  .results .main-content {
+    width: 100%;
+  }
+}
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+@media (min-width: 80em) {
+  .results .main-content {
+    width: 100%;
+  }
+  .results .main-content h1 {
+    margin: 20px 40px;
+  }
+  .results .main-content .table-container {
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    width: calc(100% - 80px);
+    margin: 20px 40px;
   }
 }
